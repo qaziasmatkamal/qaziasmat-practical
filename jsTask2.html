@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin: 0% auto;
+        background-color: rgb(248, 227, 198);
+        color: rgb(72, 42, 5);
+      padding: 50px; width: 500px;
+        text-align: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+    input{
+        padding: 15px;
+        border: 3px solid rgb(72, 42, 5);
+        color: rgb(72, 42, 5);
+    }
+</style>
+<body>
+    <script>
+function guess()
+{
+    let z = 7;
+    let y = Number(document.getElementById("num").value);
+
+    if(y == 7)
+{
+    alert("Congratulations! You guessed the correct number");
+}
+else if(y > 7)
+{
+    alert("Too High!")
+}
+else if(y < 7)
+{
+    alert("Too Low!")
+}
+}
+function num()
+{
+        let z = 4;
+    let y = Number(document.getElementById("num").value);
+
+    if(y == 4)
+{
+    alert("Congratulations! You guessed the correct number");
+}
+else if(y > 4)
+{
+    alert("Too High!")
+}
+else if(y < 4)
+{
+    alert("Too Low!")
+}
+}
+    </script>
+    <div>
+    <h1>Guess The Number</h1>
+    <p>Guess Number Between 1-10</p>
+    <input type="number" id="num" placeholder="Enter Your Guessed Number">
+    <br><br>
+    <button onclick="guess()">Guess</button>
+    <br><br>
+    <button onclick="num()">New Game</button>
+    </div>
+</body>
+</html>
